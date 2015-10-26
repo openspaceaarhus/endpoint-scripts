@@ -15,18 +15,19 @@
 
             // uncomment one of both in order to use either the
             // monster or a simple button to display the status
-            $("#svg4534").fadeIn();
-            //$("#button").fadeIn();
+            //$("#svg4534").fadeIn();
+            $("#button").fadeIn();
         });
 
     </script>
 </head>
-<body>
-
+{# <body> #}
+<body background="img/osaa_bg.jpg">
+<h1>THE SPACE IS CURRENTLY</h1>
+<a href="http://spaceapi.osaa.dk"><div  id="button"></div></a>
 <h2></h2>
-<div id="button"></div>
 
-{{ monster }}
+{# used to be a {{ monster }} here #}
 
 </body>
 </html>

@@ -1,24 +1,19 @@
 {
     "api": "0.13",
-    "space": "The space name",
-    "logo": "http://your-space.com/logo.png",
-    "url": "http://example.com",
+    "space": "Open Space Aarhus",
+    "logo": "http://osaa.dk/wp-uploads/wiki_logo.png",
+    "url": "http://osaa.dk",
     "location": {
-        "address": "see the documentation",
-        "lon": 5.973817,
-        "lat": 39.240431
-    },
-    "spacefed": {
-        "spacenet": false,
-        "spacesaml": false,
-        "spacephone": false
+        "address": "Open Space Aarhus, Katrinebjergvej 105, 8200 Aarhus N, Denmark",
+        "lon": 10.1872507,
+        "lat": 56.1732918
     },
     "contact": {
-        "twitter": "@example",
-        "email": "e@xample.com",
-        "irc": "irc://irc.freenode.net/example",
-        "ml": "public@lists.example.com",
-        "issue_mail": "ZUB4YW1wbGUuY29tCg=="
+        "twitter": "@openspaceaarhus",
+        "email": "info@osaa.dk",
+        "issue_mail": "robotto@osaa.dk",
+        "irc": "irc://irc.freenode.net/#osaa",
+        "ml": "openspaceaarhus@googlegroups.com"
     },
     "issue_report_channels": [
         "issue_mail"
@@ -27,23 +22,10 @@
         "open": null
     },
     "projects": [
-        "http://github.com/example"
+        "http://github.com/openspaceaarhus"
     ],
     "cache": {
         "schedule": "m.02"
     },
-    "sensors": {
-        "temperature": [
-            {
-                "value": null,
-                "unit": "°C",
-                "location": "Roof"
-            },
-            {
-                "value": null,
-                "unit": "°De",
-                "location": "Lab"
-            }
-        ]
-    }
+    "ext_gist": "91e49416e7595bc1517b"
 }

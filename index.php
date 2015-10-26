@@ -1,5 +1,4 @@
 <?php
-
 // a random string that you need to pass to this script if you want
 // to update some sensor values
 $config = json_decode(file_get_contents('config.json'));
@@ -212,7 +211,7 @@ function output_html() {
     header('Content-type: text/html; charset=UTF-8');
 
     $template = file_get_contents('template.html');
-    $monster = file_get_contents('img/monster/monster.svg');
+    //$monster = file_get_contents('img/monster/monster.svg');
 
     $protocol = ($_SERVER['SERVER_PORT'] === 443 ||
         @$_SERVER['HTTPS'] === 'on' ||
@@ -223,8 +222,9 @@ function output_html() {
         . $_SERVER['REQUEST_URI'];
 
     // substitute template variables
-    $html = str_replace('{{ monster }}', $monster, $template);
-    $html = str_replace('{{ baseurl }}', $base_url, $html);
+    //$html = str_replace('{{ monster }}', $monster, $template);
+    //$html = str_replace('{{ baseurl }}', $base_url, $html);
+    $html = str_replace('{{ baseurl }}', $base_url, $template);
 
     // remove comments
     $html = preg_replace('/{#.*#}/', '', $html);

@@ -23,6 +23,10 @@ body {
  *  https://blueprints.launchpad.net/inkscape/+spec/allow-browser-resizing
  *
  */
+#svg4534 {
+    width: 410px;
+    display: none;
+}
 
 h2 {
     font-family: bender_bold;
@@ -31,20 +35,11 @@ h2 {
     /*letter-spacing: 0.7em;*/
 }
 
-h1 {
-    font-family: bender_bold;
-    font-size: 40px;
-}
-
-#svg4534, h2, h1 {
+#svg4534, h2 {
     transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 500px) {
-
-    h1 {
-        font-size: 30px;
-    }
 
     h2 {
         font-size: 30px;
@@ -58,10 +53,6 @@ h1 {
 
 @media (max-width: 380px) {
 
-    h1 {
-        font-size: 25px;
-    }
-
     h2 {
         font-size: 25px;
     }
@@ -73,10 +64,6 @@ h1 {
 }
 
 @media (max-width: 220px) {
-
-    h1 {
-        font-size: 20px;
-    }
 
     h2 {
         font-size: 20px;
@@ -90,10 +77,6 @@ h1 {
 
 @media (max-width: 160px) {
 
-    h1 {
-        font-size: 18px;
-    }
-
     h2 {
         font-size: 18px;
     }
@@ -106,10 +89,6 @@ h1 {
 
 @media (max-width: 125px) {
 
-    h1 {
-        font-size: 18px;
-    }
-
     h2 {
         font-size: 18px;
     }
@@ -121,10 +100,6 @@ h1 {
 }
 
 @media (max-width: 90px) {
-
-    h1 {
-        font-size: 16px;
-    }
 
     h2 {
         font-size: 16px;
@@ -139,26 +114,19 @@ h1 {
 #button {
     display: none;
     margin: 0 auto;
-    text-align: center;
-    /* original:
+    text-align: left;
     width: 128px;
-    height: 128px;*/
-    /*full logo:
-    width: 545px;
-    height: 428px;
-    */
-    width: 256px;
-    height: 261px;
+    height: 128px;
 }
 
 #button.open {
-    background: url('/img/logo_green.png') no-repeat;
+    background: url('/img/button/green.png') no-repeat;
 }
 #button.closed {
-    background: url('/img/logo_red.png') no-repeat;
+    background: url('/img/button/red.png') no-repeat;
 }
-#button.undefined\3f \21  {
-    background: url('/img/logo_gray.png') no-repeat;
+#button.undefined {
+    background: url('/img/button/gray.png') no-repeat;
 }
 
 

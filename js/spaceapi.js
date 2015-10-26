@@ -30,7 +30,8 @@ $(document).ready(function($){
 
                         default:
 
-                            Application.render('undefined');
+                            Application.render('undefined?!');
+                            break;
                     }
                 }
             });
